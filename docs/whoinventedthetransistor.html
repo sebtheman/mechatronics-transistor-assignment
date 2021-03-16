@@ -48,19 +48,6 @@
             body {
                 background-image: url("https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/transistor_homepage.jpeg");
             }
-            .row {
-                position: fixed;
-                top: 180px;
-                left: 0;
-                text-align: center;
-                justify-content: center;
-            }
-            /* Clear floats after the columns */
-            .row:after {
-                content: "";
-                display: table;
-                clear: both;
-            }
             .welcome {
                 text-align: center;
                 font-size: 30px;
@@ -143,17 +130,22 @@
             .shockley {
                 float: left;
                 width: 100%;
-                padding: 30px;
+                padding: 300px;
+                background-image: url(https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/shockley.jpeg);
+                position: absolute;
+                top: 1000px;
+                left: 0px;
             }
             .bardeen {
                 float: left;
                 width: 100%;
-                padding: 30px;
+                padding: 200px;
+                top: 1000px;
             }
             .brattain {
                 float: left;
                 width: 100%;
-                padding: 30px;
+                padding: 200px;
             }
         </style>
     </header>
@@ -165,23 +157,23 @@
         <div class="threepeoplewhoinventedthetransistortext">
         <p id="threepeoplewhoinventedthetransistortext">There were 3 people who invented the transistor</p>
         </div>
-        <div class="row">
             <div class="shockley">
                 <p><b>William Shockley</b></p>
+                <a href="https://www.nobelprize.org/prizes/physics/1956/shockley/facts/">Image Source</a>
             </div>
             <div class="bardeen">
                 <p><b>John Bardeen</b></p>
+                <a href="https://www.nobelprize.org/prizes/physics/1972/bardeen/facts/">Image source</a>
             </div>
             <div class="brattain">
                 <p><b>Walter Houser Brattain</b></p>
             </div>
-        </div>
         <div class="transistorinventorslist">
-        <ol id="transistorinventorslist">
+        <!-- <ol id="transistorinventorslist">
             <li>William Shockley</li>
             <li>John Bardeen</li>
             <li>Walter Houser Brattain</li>
-        </ol>
+        </ol> -->
         </div>
         <div class="nextbutton">
             <center><button id="button" onclick="location.href='https://sebtheman.github.io'">Click here to go to the next page <span>&#8594;</span></button></center>
