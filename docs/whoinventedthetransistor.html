@@ -48,10 +48,18 @@
             body {
                 background-image: url("https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/transistor_homepage.jpeg");
             }
-            .welcometohomepage {
-              font-size: 20;
-              color: white;
-              background-color: black;
+            .row {
+                position: fixed;
+                top: 180px;
+                left: 0;
+                text-align: center;
+                justify-content: center;
+            }
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
             }
             .welcome {
                 text-align: center;
@@ -62,18 +70,27 @@
                 border-radius: 20px 20px 20px 20px;
                 background-color: aqua;
                 font-weight: bolder;
+                width: 50%;
+                justify-content: center;
+                display: grid;
+                position: fixed;
+                left: 0;
+                top: 0;
             }
             .welcome:hover {
               cursor: crosshair;
             }
             .nextbutton {
-                font-weight: bold;
+                font-weight: bolder;
                 width: 10%;
                 padding-top: 300px;
                 display: flex;  
                 justify-content: center;  
                 align-items: center;
                 height: auto;  
+                position: fixed;
+                bottom: 0;
+                left: 0;
             }
             #button {
                 text-align: center;
@@ -90,15 +107,84 @@
               background-color: red;
               cursor: pointer;
             }
+            .threepeoplewhoinventedthetransistortext {
+                padding-top: 30px;
+                font-weight: bold;
+                position: fixed;
+                width: 100%;
+                top: 100px;
+                left: 0px;
+            }
+            #threepeoplewhoinventedthetransistortext {
+                font-size: 30px;
+                text-align: center;
+                border-style: solid;
+                border-color: purple;
+                border-radius: 200px 200px 30px 30px;
+                background-color: yellow;
+            }
+            .transistorinventorslist {
+                position: fixed;
+                top: 200px;
+                left: 0px;
+                width: 100%;
+            }
+            #transistorinventorslist {
+                background-color: yellow;
+                font-size: 20px;
+                font-weight: 500;
+                text-align: center;
+                justify-content: center;
+                list-style-position: inside;
+                border-color: purple;
+                border-style: solid;
+                border-radius: 30px 30px 100px 100px;
+            }
+            .shockley {
+                float: left;
+                width: 100%;
+                padding: 30px;
+            }
+            .bardeen {
+                float: left;
+                width: 100%;
+                padding: 30px;
+            }
+            .brattain {
+                float: left;
+                width: 100%;
+                padding: 30px;
+            }
         </style>
     </header>
     <body>
         <div w3-include-html="https://sebtheman.github.io/responsivetopnavbar.html"></div>
         <div class="welcome">
-            <p>Welcome to Sebastian's Transistor Assignment!</p>
+            <p>Who invented the transistor</p>
+        </div>
+        <div class="threepeoplewhoinventedthetransistortext">
+        <p id="threepeoplewhoinventedthetransistortext">There were 3 people who invented the transistor</p>
+        </div>
+        <div class="row">
+            <div class="shockley">
+                <p><b>William Shockley</b></p>
+            </div>
+            <div class="bardeen">
+                <p><b>John Bardeen</b></p>
+            </div>
+            <div class="brattain">
+                <p><b>Walter Houser Brattain</b></p>
+            </div>
+        </div>
+        <div class="transistorinventorslist">
+        <ol id="transistorinventorslist">
+            <li>William Shockley</li>
+            <li>John Bardeen</li>
+            <li>Walter Houser Brattain</li>
+        </ol>
         </div>
         <div class="nextbutton">
-            <center><button id="button" onclick="location.href='https://sebtheman.github.io/whoinventedthetransistor'">Click here to learn who invented the transistor <span>&#8594;</span></button></center>
+            <center><button id="button" onclick="location.href='https://sebtheman.github.io'">Click here to go to the next page <span>&#8594;</span></button></center>
         </div>
         </script>
     </body>
