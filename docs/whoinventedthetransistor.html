@@ -77,9 +77,9 @@
                 height: auto;  
                 position: fixed;
                 bottom: 0;
-                left: 0;
+                right: 0;
             }
-            #button {
+            #nextbutton {
                 text-align: center;
                 font-size: 20px;
                 color: black;
@@ -91,7 +91,7 @@
                 align-items: center;
                 border-width: 5px;
             }
-            #button:hover {
+            #nextbutton:hover {
               background-color: red;
               cursor: pointer;
               border-width: 8px;
@@ -334,6 +334,35 @@
                 font-size: 20px;
                 font-weight: 500;
             }
+            .backbutton {
+                font-weight: bolder;
+                width: 10%;
+                padding-top: 300px;
+                display: flex;  
+                justify-content: center;  
+                align-items: center;
+                height: auto;  
+                position: fixed;
+                bottom: 0;
+                left: 0;
+            }
+            #backbutton {
+                text-align: center;
+                font-size: 20px;
+                color: black;
+                border-style: solid;
+                border-color: chocolate;
+                border-radius: 5px 5px 5px 5px;
+                background-color: aqua;
+                justify-content: center;  
+                align-items: center;
+                border-width: 5px;
+            }
+            #backbutton:hover {
+              background-color: red;
+              cursor: pointer;
+              border-width: 8px;
+            }
         </style>
     </header>
     <body>
@@ -391,7 +420,10 @@
         </ol> -->
         </div>
         <div class="nextbutton">
-            <center><button id="button" onclick="location.href='https://sebtheman.github.io'">Click here to go to the next page <span>&#8594;</span></button></center>
+            <center><button id="nextbutton" onclick="location.href='https://sebtheman.github.io'">Click here to go to the next page <span>&#8594;</span></button></center>
+        </div>
+        <div class="backbutton">
+            <center><button id="backbutton" onclick="location.href='https://sebtheman.github.io/mechatronics-transistor-assignment'">Click here to go to the introduction page <span>&#8592;</span></button></center>
         </div>
         </script>
     </body>
