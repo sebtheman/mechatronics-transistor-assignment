@@ -212,35 +212,40 @@
               cursor: pointer;
               border-width: 8px;
             }
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+            * {
+                box-sizing: border-box;
+            }
             .iphonecolumn {
+                position: absolute;
+                top: 200px;
                 float: left;
                 width: 20%;
-                padding: 100px;
-                background-image: url(https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/iphone.png)
+                height: auto;
             }
             .laptopcolumn {
                 float: left;
                 width: 20%;
-                padding: 100px;
-                background-image: url(https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/laptop.png)
+                height: auto;
             }
             .pccolumn {
                 float: left;
                 width: 20%;
-                padding: 100px;
-                background-image: url(https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/pc.jpeg)
+                height: auto;
             }
             .supercomputercolumn {
                 float: left;
                 width: 20%;
-                padding: 100px;
-                background-image: url(https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/supercomputer.jpeg)
+                height: auto;
             }
             .teslacolumn {
                 float: left;
                 width: 20%;
-                padding: 100px;
-                background-image: url(https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/tesla.png)
+                height: auto;
             }
         </style>
     </header>
@@ -262,22 +267,39 @@
         <div class="welcome">
             <p>What products does the transistor get used in</p>
         </div>
+        <!-- <div class="row">
+            <div class="iphonecolumn">
+                <img src="https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/iphone.png">
+            </div>
+            <div class="laptopcolumn">
+                <img src="https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/laptop.png">
+            </div>
+            <div class="pccolumn">
+                <img src="https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/pc.jpeg">
+            </div>
+            <div class="supercomputercolumn">
+                <img src="https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/supercomputer.jpeg">
+            </div>
+            <div class="teslacolumn">
+                <img src="https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/tesla.png">
+            </div>
+        </div> -->
         <div class="iphonecolumn">
-
+            <img src="https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/iphone.png">
         </div>
         <div class="laptopcolumn">
-
+            <img src="https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/laptop.png">
         </div>
         <div class="pccolumn">
-
+            <img src="https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/pc.jpeg">
         </div>
         <div class="supercomputercolumn">
-
+            <img src="https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/supercomputer.jpeg">
         </div>
         <div class="teslacolumn">
-
+            <img src="https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/tesla.png">
         </div>
-        
+
         <div class="nextbutton">
             <center><button id="nextbutton" onclick="location.href='https://sebtheman.github.io/mechatronics-transistor-assignment/whatproductsdoesthetransistorgetusedin'">Click here to go to the next page <span>&#8594;</span></button></center>
         </div>
