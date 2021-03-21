@@ -55,7 +55,12 @@
         <title>Sebastian's Transistor Assignment</title>
         <style>
             body {
-                background-image: url("https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/transistor_homepage.jpeg");
+                background-image: url("semiconductor.png");
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                background-size: 300px auto;
             }
             .welcome {
                 text-align: center;
@@ -68,10 +73,6 @@
                 font-weight: bolder;
                 width: 50%;
                 justify-content: center;
-                display: grid;
-                position: absolute;
-                left: 0;
-                top: 100;
             }
             .welcome:hover {
               cursor: crosshair;
@@ -105,161 +106,10 @@
               cursor: pointer;
               border-width: 8px;
             }
-            .threepeoplewhoinventedthetransistortext {
-                padding-top: 30px;
-                font-weight: bold;
-                position: absolute;
-                width: 100%;
-                top: 100px;
-                left: 0px;
-            }
-            #threepeoplewhoinventedthetransistortext {
-                font-size: 30px;
-                text-align: center;
-                border-style: solid;
-                border-color: purple;
-                border-radius: 200px 200px 30px 30px;
-                background-color: yellow;
-            }
-            .transistorinventorslist {
-                position: fixed;
-                top: 200px;
-                left: 0px;
-                width: 100%;
-            }
-            #transistorinventorslist {
-                background-color: yellow;
-                font-size: 20px;
-                font-weight: 500;
-                text-align: center;
-                justify-content: center;
-                list-style-position: inside;
-                border-color: purple;
-                border-style: solid;
-                border-radius: 30px 30px 100px 100px;
-            }
-            .shockley {
-                float: left;
-                width: 100%;
-                padding: 300px;
-                background-image: url(https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/shockley.jpeg);
-                position: absolute;
-                top: 1000px;
-                left: 0px;
-                text-align: center;
-            }
-            .bardeen {
-                float: left;
-                width: 100%;
-                padding: 300px;
-                top: 2100px;
-                left: 0px;
-                position: absolute;
-                text-align: center;
-                background-image: url(https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/bardeen.jpeg);
-            }
-            .brattain {
-                float: left;
-                width: 100%;
-                padding: 160px;
-                top: 3100px;
-                left: 0px;
-                position: absolute;
-                text-align: center;
-                padding-right: 100%;
-                background-image: url(https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/brattain.jpeg);
-            }
-            .fillspace {
-                position: absolute;
-                top: 3500px;
-                left: 0px;
-            }
-            .shockleyinfo {
-                padding-top: 30px;
-                font-weight: bold;
-                position: absolute;
-                width: 100%;
-                top: 830px;
-                left: 0px;
-            }
-            #shockleyinfo {
-                font-size: 30px;
-                text-align: center;
-                border-style: solid;
-                border-color: purple;
-                border-radius: 200px 200px 200px 200px;
-                background-color: yellow;
-            }
-            .bardeeninfo {
-                padding-top: 30px;
-                font-weight: bold;
-                position: absolute;
-                width: 100%;
-                top: 1930px;
-                left: 0px;
-            }
-            #bardeeninfo {
-                font-size: 30px;
-                text-align: center;
-                border-style: solid;
-                border-color: purple;
-                border-radius: 200px 200px 200px 200px;
-                background-color: yellow;
-            }
-            .brattaininfo {
-                padding-top: 30px;
-                font-weight: bold;
-                position: absolute;
-                width: 100%;
-                top: 2930px;
-                left: 0px;
-            }
-            #brattaininfo {
-                font-size: 30px;
-                text-align: center;
-                border-style: solid;
-                border-color: purple;
-                border-radius: 200px 200px 200px 200px;
-                background-color: yellow;
-            }
-            .scrolldown {
-                padding-top: 30px;
-                font-weight: bold;
-                position: absolute;
-                width: 100%;
-                top: 150px;
-                left: 0px;
-            }
-            #scrolldown {
-                font-size: 30px;
-                text-align: center;
-                border-style: solid;
-                border-color: yellow;
-                background-color: purple;
-                color: white;
-                font-weight: 400;
-            }
-            .scrolldowntwo {
-                padding-top: 30px;
-                font-weight: bold;
-                position: absolute;
-                width: 100%;
-                top: 1600px;
-                left: 0px;
-            }
-            .scrolldownthree {
-                padding-top: 30px;
-                font-weight: bold;
-                position: absolute;
-                width: 100%;
-                top: 2750px;
-                left: 0px;
-                font-weight: 400;
-            }
             .broughttoyouby {
                 position: fixed;
                 left: 0px;
-                top: 300px;
+                top: 400px;
                 background-image: url(https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/broughttoyouby.png);
                 padding-top: 100px;
                 padding-right: 670px;
@@ -267,7 +117,7 @@
             .kmsf {
                 position: fixed;
                 left: 0px;
-                top: 400px;
+                top: 470px;
                 background-image: url(https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/KMSF.png);
                 padding-top: 80px;
                 padding-right: 220px;
@@ -275,7 +125,7 @@
             .dmsf {
                 position: fixed;
                 left: 270px;
-                top: 400px;
+                top: 470px;
                 background-image: url(https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/DMSF.png);
                 padding-top: 80px;
                 padding-right: 220px;
@@ -283,7 +133,7 @@
             .fmsf {
                 position: fixed;
                 left: 550px;
-                top: 400px;
+                top: 470px;
                 background-image: url(https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/FMSF.png);
                 padding-top: 80px;
                 padding-right: 220px;
@@ -291,7 +141,7 @@
             .amsf {
                 position: fixed;
                 left: 820px;
-                top: 400px;
+                top: 470px;
                 background-image: url(https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/AMSF.png);
                 padding-top: 80px;
                 padding-right: 220px;
@@ -299,7 +149,7 @@
             .cmsf {
                 position: fixed;
                 left: 1100px;
-                top: 400px;
+                top: 470px;
                 background-image: url(https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/CMSF.png);
                 padding-top: 80px;
                 padding-right: 220px;
@@ -307,7 +157,7 @@
             .kmsfcomma {
                 position: fixed;
                 left: 200px;
-                top: 430px;
+                top: 500px;
                 background-image: url(https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/comma.png);
                 padding-top: 75px;
                 padding-right: 77px;
@@ -315,7 +165,7 @@
             .dmsfcomma {
                 position: fixed;
                 left: 480px;
-                top: 430px;
+                top: 500px;
                 background-image: url(https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/comma.png);
                 padding-top: 75px;
                 padding-right: 77px;
@@ -323,7 +173,7 @@
             .fmsfcomma {
                 position: fixed;
                 left: 750px;
-                top: 430px;
+                top: 500px;
                 background-image: url(https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/comma.png);
                 padding-top: 75px;
                 padding-right: 77px;
@@ -331,7 +181,7 @@
             .amsfcomma {
                 position: fixed;
                 left: 1025px;
-                top: 430px;
+                top: 500px;
                 background-image: url(https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/comma.png);
                 padding-top: 75px;
                 padding-right: 77px;
@@ -339,7 +189,7 @@
             .madsussyfoundationexplanation {
                 position: fixed;
                 left: 0px;
-                top: 500px;
+                top: 550px;
                 font-size: 20px;
                 font-weight: 500;
             }
@@ -372,10 +222,48 @@
               cursor: pointer;
               border-width: 8px;
             }
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            .pageroomadder {
+                position: absolute;
+                top: 1000px;
+                left: 0px;
+            }
+            #textone {
+                font-weight: bold;
+                color: black;
+            }
+            #texttwo {
+                color: black;
+                font-size: 30px;
+                font-weight: 300;
+                border-style: solid;
+                background-image: url(rainbow_rectangle.gif);
+                background-size: 2000px auto;
+            }
+            .texttwo {
+                color: black;
+                font-size: 30px;
+                font-weight: 300;
+                border-style: solid;
+                background-image: url(rainbow_rectangle.gif);
+                background-size: 2000px auto;
+            }
+            .semiconductormaterial {
+                color: white;
+                background-color: chocolate;
+                font-size: 20pt;
+            }
         </style>
     </header>
     <body>
-        <div class="broughttoyouby"></div>
+        <!-- <div class="broughttoyouby"></div>
         <div class="kmsf"></div>
         <div class="kmsfcomma"></div>
         <div class="dmsf"></div>
@@ -387,52 +275,22 @@
         <div class="cmsf"></div>
         <div class="madsussyfoundationexplanation">
             <p>Kovid Mad Sussy Foundation, Daniel Mad Sussy Foundation, Faiz Mad Sussy Foundation, Andrew Mad Sussy Foundation, and Chris Mad Sussy Foundation respectively.</p>
-        </div>
+        </div> -->
         <div w3-include-html="https://sebtheman.github.io/responsivetopnavbar.html"></div>
-        </div>
         <div class="welcome">
-            <p>Who invented the transistor</p>
+            <p>What is semiconductor material?</p>
         </div>
-        <div class="threepeoplewhoinventedthetransistortext">
-        <p id="threepeoplewhoinventedthetransistortext">There were 3 people who invented the transistor</p>
+        <br>
+        <div class="texttwo">
+            <center><b><p>Semiconductor material conducts a medium amount if electricity, not as much as a conductor, but not as little as a insulator.</p></b></center>
         </div>
-        <div class="scrolldown">
-            <p id="scrolldown">Scroll down <span>&#8595;</span></p>
-        </div>
-        <div class="shockleyinfo">
-            <p id="shockleyinfo">William Shockley</p>
-            <a href="https://www.nobelprize.org/prizes/physics/1956/shockley/facts/" id="shockleyinfo">Image Source</a>
-        </div>
-        <div class="scrolldowntwo">
-            <p id="scrolldown">Scroll down further <span>&#8595;</span></p>
-        </div>
-        <div class="bardeeninfo">
-            <p id="bardeeninfo">John Bardeen</p>
-            <a href="https://www.nobelprize.org/prizes/physics/1972/bardeen/facts/" id="bardeeninfo">Image source</a>
-        </div>
-        <div class="scrolldownthree">
-            <p id="scrolldown">Scroll down even further <span>&#8595;</span><span>&#9786;</span></p>
-        </div>
-        <div class="brattaininfo">
-            <p id="brattaininfo">Walter Houser Brattain</p>
-            <a href="https://www.nobelprize.org/prizes/physics/1956/brattain/biographical/" id="brattaininfo">Image source</a>
-        </div>
-        <div class="shockley"></div>
-        <div class="bardeen"></div>
-        <div class="brattain"></div>
-        <div class="fillspace"><p>g</p></div>
-        <!-- <div class="transistorinventorslist">
-        <ol id="transistorinventorslist">
-            <li>William Shockley</li>
-            <li>John Bardeen</li>
-            <li>Walter Houser Brattain</li>
-        </ol> -->
-        </div>
+        <center><b style="font-size: 18pt;color:white;"><p>They are used in electronics because of their low cost, power efficiency, and reliability.</p></b></center>
+        <center><b style="font-size:18pt;color:white;"><p>Semiconductors either stop a current or allow a non-free flowing current to go through, allowing for control of the current.</p></b></center>
         <div class="nextbutton">
-            <center><button id="nextbutton" onclick="location.href='https://sebtheman.github.io/mechatronics-transistor-assignment/whyisthetransistorsoimportant'">Click here to go to the next page and see why the transistor is so important <span>&#8594;</span></button></center>
+            <center><button id="nextbutton" onclick="location.href='https://sebtheman.github.io/mechatronics-transistor-assignment/whatproductsdoesthetransistorgetusedin'">Click here to go to the next page <span>&#8594;</span></button></center>
         </div>
         <div class="backbutton">
-            <center><button id="backbutton" onclick="location.href='https://sebtheman.github.io/mechatronics-transistor-assignment'">Click here to go to the introduction page <span>&#8592;</span></button></center>
+            <center><button id="backbutton" onclick="location.href='https://sebtheman.github.io/mechatronics-transistor-assignment/whyisthetransistorsoimportant'">Click here to go back to see why the transistor is a lot better than valves <span>&#8592;</span></button></center>
         </div>
         <script>
             includeHTML();
