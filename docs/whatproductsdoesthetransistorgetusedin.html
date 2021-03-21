@@ -72,10 +72,6 @@
                 font-weight: bolder;
                 width: 50%;
                 justify-content: center;
-                display: grid;
-                position: absolute;
-                left: 0;
-                top: 100;
             }
             .welcome:hover {
               cursor: crosshair;
@@ -263,8 +259,21 @@
             .textone {
                 color: white;
                 margin: 0 auto;
+                font-size: 50px;
+            }
+            .texttwo {
+                color: white;
+                margin: 0 auto;
+                font-size: 30px;
+            }
+            .pageroomadder {
                 position: absolute;
-                top: 200px;
+                top: 3000px;
+                left: 0px;
+            }
+            #textthree {
+                background-color: white;
+                color: black;
                 font-size: 50px;
             }
         </style>
@@ -286,6 +295,9 @@
         <div w3-include-html="https://sebtheman.github.io/responsivetopnavbar.html"></div>
         <div class="welcome">
             <p>What products does the transistor get used in</p>
+        </div>
+        <div class="pageroomadder">
+            <p>Hello</p>
         </div>
         <!-- <div class="row">
             <div class="iphonecolumn">
@@ -320,8 +332,17 @@
             <img src="https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/tesla.png">
         </div> -->
         <div class="textone">
-            <center><p><b>Test</b></p></center>
+            <center><p><b>The transistor gets used in many different products</b></p></center>
         </div>
+        <div class="texttwo">
+            <center><p>Such as...</p></center>
+        </div>
+        <ul>
+            <li>
+                <img src="https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/transparentwhiteiphone.png" title="iPhone" id="textthree">
+                <b id="textthree">iPhone</b>
+            </li>
+        </ul>
         <div class="nextbutton">
             <center><button id="nextbutton" onclick="location.href='https://sebtheman.github.io/mechatronics-transistor-assignment/whatproductsdoesthetransistorgetusedin'">Click here to go to the next page <span>&#8594;</span></button></center>
         </div>
